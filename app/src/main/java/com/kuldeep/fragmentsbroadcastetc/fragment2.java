@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 public class fragment2 extends Fragment {
 
-
     View view;
 
     @Override
