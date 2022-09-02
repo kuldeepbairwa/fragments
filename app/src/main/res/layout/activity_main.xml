@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/fragment2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_layout"
+        android:layout_alignEnd="@+id/frame_layout"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Fragment 2" />
+
+    <Button
+        android:id="@+id/fragment1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_layout"
+        android:layout_alignStart="@+id/frame_layout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+
+        android:text="Fragment 1" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="this is frame layout"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
